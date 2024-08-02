@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f3a847, #ff6f00); /* Оранжевый градиент */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .App {
+    text-align: center;
+    color: #fff; /* Белый текст по умолчанию */
+  }
+  
+  .h1-form {
+    margin-bottom: 20px;
+    color: #fff; /* Белый цвет заголовка */
+    font-size: 2.5rem; /* Размер шрифта заголовка */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Тень для заголовка */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 2px solid #000; /* Черная граница */
+    background-color: #333; /* Темный фон контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Более выраженная тень */
+    border-radius: 12px;
+    width: 400px;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #ff6f00; /* Оранжевый цвет текста таймера */
+    margin: 0 0 20px;
+  }
+  
+  .All-FormButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Меньшее расстояние между кнопками */
+  }
+  
+  button {
+    padding: 8px 16px; /* Уменьшенные отступы */
+    font-size: 0.9rem; /* Меньший размер шрифта */
+    color: #fff;
+    background-color: #ff6f00; /* Оранжевый цвет кнопок */
+    border: 1px solid #000; /* Черная граница кнопок */
+    border-radius: 6px; /* Меньшее скругление углов */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавный переход */
+  }
+  
+  button:hover {
+    background-color: #ff8c00; /* Светлее оранжевый при наведении */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Тень при наведении */
+  }
+  
+  button:disabled {
+    background-color: #ccc; /* Цвет кнопок при отключении */
+    border-color: #888; /* Цвет границы кнопок при отключении */
+    cursor: not-allowed;
+  }
+  
+  button:disabled:hover {
+    background-color: #ccc; /* Цвет кнопок при отключении, не меняется при наведении */
+  }
+  
